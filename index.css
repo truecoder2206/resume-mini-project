@@ -411,3 +411,12 @@ section:nth-child(2n+1){
 }
 
 
+.footer{
+    margin-top: auto;
+    text-align: center;
+    padding-bottom: 18px;
+    padding-top: 20px;
+    background-color: #2857A4;
+    font-size: larger;
+}
+

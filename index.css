@@ -1,0 +1,413 @@
+body{
+    margin: 0px;
+}
+/*body header*/
+#header{
+    opacity: 0.9;
+    height: 65vh;
+    background-image: url(images/office.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*horizontal-list*/
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 20px 20px 0px;
+
+    
+}
+
+.horizontal-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-menu li{
+    transition: color 0.5s, border-bottom 4s;
+    
+}
+
+.nav-menu li a:hover{
+    border-bottom: 1px solid gold;
+    color:gold;
+}
+
+/*name-and-social-icons*/
+
+#name-social-container{
+    margin-top: 20vh;
+}
+
+#my-name{
+    margin-bottom: 0.5rem;
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+    /* color: white; */
+    font-weight: 700;
+    color: white;
+}
+
+@media screen and (max-width : 600px) {
+    #name-social-container{
+        margin-top : 5vh;
+    }
+    #my-name{
+        font-size : 4rem;
+    }   
+}
+.icon li a i{
+    padding: 8px;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+.icon li a i:hover{
+    box-shadow: 0px 0px 10px 6px;
+}
+
+/* about section */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 6px white;
+}
+
+.intro{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 1.5rem;
+    color: grey;
+    word-spacing: 8px;
+    line-height: 1.8;
+    
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section:nth-child(2n){
+    background-color: rgb(207, 206, 114);
+}
+
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+/*skills section*/
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857A4;
+    /* color: bisque; */
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+.skill-progress{
+    width: 7rem;
+    height: 1.4rem;
+    background-color: #EAEAEA;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+    margin : 20px 50px;
+}
+
+.skill-progress>div{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.skill-name span{
+    color:black;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.mb-blue{
+    background-color: #2857a4;
+}
+
+.mb-red{
+    background-color: red;
+}
+
+.mb-green{
+    background-color: green;
+}
+
+.mb-pink{
+    background-color: pink;
+}
+
+.mb-yellow{
+    background-color: yellow;
+}
+
+.display{
+    width: 50%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*percentage-classes*/
+
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+
+}
+
+.fifty-percent{
+    width: 50%;
+    height: inherit;
+}
+
+.twenty-five-percent{
+    width: 25%;
+    height: inherit;
+}
+
+.five-percent{
+    width: 15%;
+    height: inherit;
+}
+
+/*education*/
+.timeline{
+    position: relative;
+    width: 80%;
+    background-color:#F8F8F8;
+    margin : auto;
+}
+
+.timeline-box {
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    font-size: 30px;
+    color: blueviolet;
+    text-align: center;
+    background-color: #9ca428;
+    
+}
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+    content : '';
+    position : absolute;
+    top : 52%;
+    right : -12.5%;
+    height : 0.5rem;
+    width : 0.5rem;
+    border-radius: 50%;
+    background-color : red;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position : absolute;
+    top : 49%;
+    left : -9.1%;
+    height : 0.5rem;
+    width : 0.5rem;
+    border-radius: 50%;
+    background-color : blue;
+    z-index: 1;
+}
+
+.timeline-divider{
+    border : 1px dashed #0096fa6b;
+    height : 75%;
+    width : 0;
+    position : absolute;
+    top : 15%;
+    left : 50%;
+}
+
+.timeline-plane{
+    transform : rotate(90deg);
+    position : sticky;
+    top : 10%;
+    z-index: 2;
+}
+
+/* icon size */
+.icon-size{
+    font-size : 1.8rem;
+}
+
+@media screen and (max-width : 600px){
+    .timeline-divider{
+        left : 2%;
+    }
+    .timeline-box{
+        left : 8% !important;
+        width : 80% !important;
+    }
+    .timeline-box:nth-child(2n+1)::after{
+        left : -10%;
+    }
+    .timeline-box:nth-child(2n)::after{
+        left : -10%;
+    }
+}
+
+/* portfolio */
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+
+}
+
+.portfolio .box-container .box{
+    height: 20rem;
+    width: 26rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+/*contact*/
+
+.contact{
+    background-color: black !important;
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color:darkgoldenrod;
+}
+
+.contact .row form .btn{
+    display: block;
+    margin : 0.5rem;
+    color :rgb(253, 176, 9);
+    background-color: rgb(255, 0, 0);
+}
+
+
